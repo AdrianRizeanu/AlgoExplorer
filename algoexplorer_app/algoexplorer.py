@@ -99,7 +99,4 @@ def admin_dashboard():
     return render_template('admin.html', users=all_users)
 
 if __name__ == '__main__':
-    init_db()
-    import os
-    port = int(os.environ.get("PORT", 10000))
-    app.run(host='0.0.0.0', port=port, debug=False)
+  app.run(debug=True, port=10000)
